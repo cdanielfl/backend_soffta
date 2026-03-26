@@ -1,98 +1,97 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# 🏥 Sistema de Gestão de Unidades Hospitalares (White Label)
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+**Status do Projeto:** 🚧 Em Desenvolvimento / Estudo Ativo
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+Este é um ecossistema hospitalar completo, focado na gestão de unidades de saúde. O projeto está a ser construído com uma arquitetura White Label, permitindo a personalização para diferentes instituições através de um núcleo robusto e escalável.
 
-## Description
+---
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## 🎯 Propósito de Aprendizado e Evolução
 
-## Project setup
+Este repositório é o reflexo da minha jornada de especialização em Desenvolvimento Fullstack. Mais do que apenas criar uma ferramenta funcional, o objetivo aqui é a aplicação prática de conceitos avançados enquanto aprendo novas tecnologias e padrões de mercado.
 
-```bash
-$ pnpm install
-```
+---
 
-## Compile and run the project
+## 🧠 O que estou a aprender na prática:
 
-```bash
-# development
-$ pnpm run start
+- **TypeScript Avançado:** Transição para o uso de tipagem estrita, interfaces, tipos utilitários e decoradores para criar um código seguro, previsível e autodocumentado.
 
-# watch mode
-$ pnpm run start:dev
+- **NestJS & Arquitetura Modular:** Domínio da organização de aplicações em módulos, implementação do padrão de Injeção de Dependência e criação de serviços (@Injectable) desacoplados.
 
-# production mode
-$ pnpm run start:prod
-```
+- **Banco de Dados Relacional:** Implementação prática com PostgreSQL, explorando esquemas, relacionamentos entre tabelas e otimização de consultas.
 
-## Run tests
+- **ORM com TypeORM:** Aplicação do padrão Data Mapper para abstrair a complexidade do SQL, utilizando Repositórios e Entidades para manipulação de dados.
 
-```bash
-# unit tests
-$ pnpm run test
+---
 
-# e2e tests
-$ pnpm run test:e2e
+## 🚀 Desafios Superados (Até agora):
 
-# test coverage
-$ pnpm run test:cov
-```
+- **Configuração de Ambiente:** Integração do NestJS com PostgreSQL via variáveis de ambiente utilizando o ConfigModule e validação de conexões.
 
-## Deployment
+- **Fluxo de Dados Seguro:** Implementação de DTOs (Data Transfer Objects) com class-validator para garantir que apenas dados válidos cheguem à camada de persistência.
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+- **Padrão Repository:** Abstração completa da lógica de banco de dados, garantindo que o Controller foque apenas em rotas e o Service na lógica de negócio.
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Framework:** NestJS  
+- **Linguagem:** TypeScript  
+- **Banco de Dados:** PostgreSQL  
+- **ORM:** TypeORM  
+- **Validação:** Class-validator & Class-transformer  
+
+---
+
+## 🏗️ Arquitetura do Sistema
+
+O projeto segue a estrutura modular e organizada recomendada pelo NestJS:
+
+- **Controllers:** Portas de entrada da aplicação que gerenciam as rotas e pedidos HTTP.  
+- **Services:** Camada de lógica de negócio onde as decisões e regras do sistema são executadas.  
+- **Entities:** Representação das tabelas do banco de dados como classes TypeScript.  
+- **DTOs:** Contratos que validam e tipam os dados recebidos nas requisições.  
+- **Repositories:** Interface do TypeORM que isola o acesso ao banco de dados.  
+
+---
+
+## 📂 Estrutura de Pastas Principal
 
 ```bash
-$ pnpm install -g @nestjs/mau
-$ mau deploy
-```
+src/
+ ├── unidades-hospitalares/         # Módulo de gestão de unidades
+ │    ├── dto/                      # Esquemas de validação (Create/Update)
+ │    ├── entities/                 # Definição das tabelas e colunas
+ │    ├── unidades-hospitalares.controller.ts  # Definição dos Endpoints
+ │    ├── unidades-hospitalares.service.ts     # Regras de negócio
+ │    └── unidades-hospitalares.module.ts      # Amarração do módulo
+ ├── app.module.ts                  # Módulo raiz (Configuração do Banco)
+ └── main.ts                        # Configurações globais e Pipes de validação
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
 
-## Resources
+ 📡 Endpoints Disponíveis
 
-Check out a few resources that may come in handy when working with NestJS:
+| Método | Rota | Descrição |
+| :--- | :--- | :--- |
+| **POST** | `/unidades-hospitalares` | Cria uma nova unidade hospitalar. |
+| **GET** | `/unidades-hospitalares` | Lista todas as unidades cadastradas. |
+| **GET** | `/unidades-hospitalares/:id` | Recupera uma unidade específica pelo ID. |
+| **PATCH** | `/unidades-hospitalares/:id` | Atualiza os dados de uma unidade existente. |
+| **DELETE** | `/unidades-hospitalares/:id` | Remove uma unidade do sistema. |
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+🔧 Como Executar o Projeto
 
-## Support
+Clone o repositório: git clone <url-do-repositorio>
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+Instale as dependências: npm install
 
-## Stay in touch
+Configure o arquivo .env na raiz com suas credenciais do PostgreSQL.
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+Inicie o servidor em modo de desenvolvimento: npm run start:dev
 
-## License
+A API estará acessível em http://localhost:3000.
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+🛡️ Nota sobre a Camada de Dados
+
+Atualmente, o projeto utiliza synchronize: true para a criação automática das tabelas no banco de dados. Em fases futuras, será implementada a gestão de Migrations para um controle de versão e evolução do esquema de banco de dados mais robusto e profissional.
